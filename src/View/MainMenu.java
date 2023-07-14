@@ -36,6 +36,8 @@ public class MainMenu extends JFrame implements ActionListener{
                 new InputDataPage();
                 break;
             case "Pencarian":
+                this.dispose();
+                new PencarianPage();
                 break;
             case "Exit":
                 dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
